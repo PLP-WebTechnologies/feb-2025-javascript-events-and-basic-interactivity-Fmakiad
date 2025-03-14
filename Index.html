@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Webpage</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        form { margin: 20px auto; width: 300px; }
+        input, button { display: block; width: 100%; margin: 10px 0; padding: 8px; }
+        .error { color: red; display: none; }
+        .btn {width: 100%; background-color: #666; border: none; padding: 16px; border-radius: 10px; color: #fff;}
+        .input{
+            background: rgb(94, 94, 115); 
+            padding: 16px;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            outline: none;
+        }
+        .bg-color{
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: yellowgreen;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 16px;
+            margin-left: 16px;
+            border: none;
+            border-radius: 16px;
+            cursor: pointer;
+        }
+        .text{
+            color: #555;
+            font-size: 32px;
+        }
+        </style>
+</head>
+<body>
+    <h2 class="text">Interactive JavaScript Webpage</h2>
+    <form id="userForm">
+        <input class="input" type="text" id="name" placeholder="Enter your name" required>
+        <span class="error" id="nameError">Name is required!</span>
+        <button class="btn" type="submit">Submit</button>
+    </form>
+
+    <!-- USER GREETING -->
+     <h2 id="user-greeting" class="text"></h2>
+     <button id="bg-color" class="bg-color">Change background</button>
+
+     <script src="/app.js"></script>
+</body>
+</html>
